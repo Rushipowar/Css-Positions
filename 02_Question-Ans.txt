@@ -1,0 +1,29 @@
+Relative:- 
+
+-> When you apply position: relative; to an element, you are specifying its positioning relative to its normal position in the document flow.
+-> You can use properties like top, right, bottom, and left to offset the element from its original position. These values are calculated relative to where the element would be in the normal document flow.
+-> Elements with relative positioning do affect the document flow, which means they still occupy space in the layout as if they were in their original position. Other elements are positioned as if the relatively
+    positioned element were still in its normal place.
+-> Relative positioning is often used for fine-tuning the position of elements, and it's particularly useful when you want to move an element without affecting the layout of other elements.
+
+Example:
+   .relative{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+
+Absolute:- 
+
+-> With position: absolute;, an element is positioned relative to its nearest positioned ancestor. If no ancestor has a defined positioning (i.e., no ancestor with position: relative, position: absolute, or position: fixed), 
+    it's positioned relative to the initial containing block, typically the viewport.
+-> Elements with absolute positioning are completely removed from the document flow, meaning they don't occupy any space. This allows other elements to overlap them, and they won't affect the layout of surrounding elements.
+-> Absolute positioning is often used to create overlays, tooltips, dropdown menus, or any situation where you want an element to be placed precisely within a container or on top of other content.
+
+Example:
+   .absolute{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
